@@ -10,6 +10,11 @@
 	<!--User view-->
 	<div ng-controller="userController">
 		<h1>There are {{userCount}} Users.</h1>
+		<ol>
+			<li ng-repeat="user in users">
+				{{user.name}}
+			</li>
+		</ol>
 	</div>
 
 
