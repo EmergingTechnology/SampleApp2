@@ -1,8 +1,8 @@
 var express = require('express');
 	app = express();
 
-app.get('/', function(req,res){
-	res.sendfile(_dirname + '/client/views/index.html');
+app.get('/', function (req, res) {
+	res.sendfile(__dirname + '/client/views/index.html');
 });
 
 app.listen(3000, function(){
