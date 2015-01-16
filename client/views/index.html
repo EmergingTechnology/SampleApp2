@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
 	<meta charset="utf-8">
 	<title http-equiv="X-UA-Compatible" content="IE=edge">Home Page</title>
@@ -7,6 +7,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<p>Hello</p>
+	<!--User view-->
+	<div ng-controller="userController">
+		<h1>There are {{userCount}} Users.</h1>
+	</div>
+
+
+	<!--Angular scripts-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+
+	<!--scripts-->
+	<script type="text/javascript" src="/js/controllers/controller.js"></script>
 </body>
 </html>
