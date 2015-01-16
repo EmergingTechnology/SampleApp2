@@ -1,5 +1,5 @@
 function userController($scope){
-	$scope.userCount = 10;
+	//$scope.userCount = 10;
 
 	$scope.users = [
 	{name: "User 1"},
@@ -9,4 +9,9 @@ function userController($scope){
 	{name: "User 5"},
 	{name: "User 6"}
 	]
+
+	$scope.createUser = function(){
+		$scope.users.push({name: $scope.userName});
+		$scope.userName = '';
+	}
 }
