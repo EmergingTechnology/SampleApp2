@@ -8,5 +8,5 @@ app.get('/', function (req, res) {
 app.use('/js', express.static(__dirname + '/client/js'));
 
 app.listen(3000, function(){
-	console.log('Im Listening...');
+	console.log('Server is Running at http://localhost:3000/');
 });
