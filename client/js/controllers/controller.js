@@ -1,5 +1,4 @@
 function userController($scope){
-	//$scope.userCount = 10;
 
 	$scope.users = []
 
