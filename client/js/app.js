@@ -6,6 +6,7 @@ function ($scope, $resource){
 
   $scope.createUser = function(){
     $scope.users.push({name: $scope.userName});
+    $scope.users.push({lastname: $scope.userLastname});
     $scope.userName = '';
   }
 }]);

@@ -12,11 +12,14 @@
 		<h1>There are {{users.length}} Users.</h1>
 		<ol>
 			<li ng-repeat="user in users" onclick="change()">
+
 				{{user.name}}
+				{{user.lastname}}
 			</li>
 		</ol>
 		<form ng-submit="createUser()">
 			<input type="text" placeholder="Enter New User Name" ng-model="userName">
+			<input type="text" placeholder="Enter New User Name" ng-model="userLastname">
 			<button type="submit">Add</button>
 			<p id="demo"></p>
 		</form>
